@@ -23,3 +23,12 @@ for (num in arr3) {
     counts[num] = counts.getOrDefault(num, 0) + 1
 }
 println("$counts")
+
+val num = readLine()!!.toInt()
+var temp = num
+var digitSum = 0
+while (temp > 0) {
+    digitSum += temp % 10
+    temp /= 10
+}
+println("$digitSum")

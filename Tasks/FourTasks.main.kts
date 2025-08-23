@@ -11,5 +11,11 @@ for (x in arr) {
 val unique = counts.filter { it.value == 1 }.keys
 println("$counts")
 
+fun factorial(n: Int): Long {
+    return if (n <= 0) 1 else n * factorial(n - 1)
+}
+val n = readLine()!!.toInt()
+println("$n! = ${factorial(n)}")
+
 
 

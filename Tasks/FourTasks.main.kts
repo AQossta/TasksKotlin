@@ -17,5 +17,14 @@ fun factorial(n: Int): Long {
 val n = readLine()!!.toInt()
 println("$n! = ${factorial(n)}")
 
+val primeNum = readLine()!!.toInt()
+var isPrime = primeNum > 1
+for (i in 2 until primeNum) {
+    if (primeNum % i == 0) {
+        isPrime = false
+        break
+    }
+}
+println("$primeNum саны ${if (isPrime) "жай сан" else "құрама сан"}")
 
 

@@ -8,3 +8,11 @@ while (temp > 0) {
     temp /= 10
 }
 println(sum)
+
+val n = readLine()!!.toInt()
+
+var fact: Long = 1
+for (i in 1..n){
+    fact *= i
+}
+println(fact)

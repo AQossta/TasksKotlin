@@ -12,9 +12,10 @@ fun main(){
 }
 
 //TASK-1.1
-class Warrior(val _name: String, val _age: Int, val _typeWarrior: String) {
+open class Warrior(val _name: String, val _age: Int, val _typeWarrior: String) {
     var name = _name
     var age = _age
     var typeWarrior = _typeWarrior
 
+    open fun doAttack(name: String) {}
 }

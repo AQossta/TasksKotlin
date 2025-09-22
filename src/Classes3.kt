@@ -1,9 +1,9 @@
 fun main() {
     var cars = listOf(
-        Car("BMW"),
-        Car("Hyundai"),
-        Car("Mercedes"),
-        Car("Toyota")
+        Cars("BMW"),
+        Cars("Hyundai"),
+        Cars("Mercedes"),
+        Cars("Toyota")
     )
 
     for (car in cars) {
@@ -11,6 +11,6 @@ fun main() {
     }
 }
 
-data class Car(
+data class Cars(
     var make: String
 )
